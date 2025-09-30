@@ -1,0 +1,140 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #eee;
+  overflow: hidden;
+}
+
+/* Game canvas */
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+  background: #181818;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  border: 2px solid #333;
+}
+
+/* HUD */
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: none; /* HUD doesn’t block canvas */
+}
+
+/* Top bar */
+#topbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: rgba(30,30,30,0.85);
+  padding: 8px 14px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  pointer-events: auto;
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timerBarContainer {
+  background: #333;
+  width: 120px;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+#timerBar {
+  background: linear-gradient(90deg, #ff4d4d, #ffcc00);
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s linear;
+}
+
+#scoreInfo {
+  font-weight: bold;
+  color: #4cafef;
+}
+
+/* Leaderboard */
+#leaderboard {
+  background: rgba(30,30,30,0.9);
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
+  width: 220px;
+  max-height: 400px;
+  overflow-y: auto;
+  pointer-events: auto;
+}
+
+#leaderboard h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #f5f5f5;
+  border-bottom: 1px solid #444;
+  padding-bottom: 6px;
+}
+
+#leaderboardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#leaderboardList li {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+#leaderboardList li:last-child {
+  border-bottom: none;
+}
+
+#leaderboardList li.me {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.badge {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.lb-name {
+  flex-grow: 1;
+}
+
+.lb-score {
+  font-weight: bold;
+}
+
+/* Footer */
+#footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  pointer-events: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Territory Control</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div id="hud">
+    <div id="topbar">
+      <div id="roundInfo">Round: 1</div>
+      <div id="timer">
+        <span id="timerInfo">⏱ 120s</span>
+        <div id="timerBarContainer">
+          <div id="timerBar"></div>
+        </div>
+      </div>
+      <div id="scoreInfo">Tiles: 0</div>
+    </div>
+    <div id="leaderboard">
+      <h2>🏆 Leaderboard</h2>
+      <ul id="leaderboardList"></ul>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="footer">
+    <p>Use arrow keys to move • Capture territory by enclosing areas</p>
+  </div>
+
+  <script src="static/game.js"></script>
+</body>
+</html>
