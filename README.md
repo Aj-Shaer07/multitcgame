@@ -54,10 +54,10 @@ Open your browser and go to:
 
 ## 🎮 Controls
 
-⬆️ Arrow Up / W    → Move Up
-⬇️ Arrow Down / S  → Move Down
-⬅️ Arrow Left / A  → Move Left
-➡️ Arrow Right / D → Move Right
+⬆️  Arrow Up / W    → Move Up  
+⬇️  Arrow Down / S  → Move Down  
+⬅️  Arrow Left / A  → Move Left  
+➡️  Arrow Right / D → Move Right  
 
 Capture tiles by **looping around areas**
 Your score = 🟦 number of tiles you own.
@@ -68,10 +68,8 @@ Your score = 🟦 number of tiles you own.
 
 Edit values in "server.py":
 
-
 ROUND_DURATION = 120   # ⏱️ round length in seconds
 VISIBLE_RADIUS = 40    # 👁️ visible area around player
-
 
 ---
 
