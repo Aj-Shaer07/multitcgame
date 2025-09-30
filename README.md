@@ -66,10 +66,11 @@ Your score = 🟦 number of tiles you own.
 
 ## ⚙️ Configuration
 
-Edit values in "server.py":
+Edit values in server.py based on your requirements for the game:-
 
-ROUND_DURATION = 120   # ⏱️ round length in seconds
-VISIBLE_RADIUS = 40    # 👁️ visible area around player
+ROUND_DURATION = 120   # ⏱️ round length in seconds  
+VISIBLE_RADIUS = 40    # 👁️ visible area around player  
+
 
 ---
 
@@ -81,5 +82,47 @@ VISIBLE_RADIUS = 40    # 👁️ visible area around player
 * 🎨 CSS (dark theme) + JavaScript
 
 ---
+Good question 🙂
 
-Would you like me to also design a **GitHub preview screenshot/banner section** (with placeholders like `![Game Preview](screenshot.png)`) so the repo looks visually appealing when someone visits?
+Here’s how **multiple people can join your game**:
+
+---
+
+## 👥 Multiplayer Instructions
+
+1. **Start the server**
+
+   ```bash
+   python3 server.py
+   ```
+
+   You should see something like:
+
+   ```
+   Game server is running!
+   ▶ Local:   http://localhost:8080
+   ▶ Network: http://192.168.1.25:8080
+   ```
+
+2. **On your own computer**
+   Open a browser and go to 👉 [http://localhost:8080](http://localhost:8080).
+   This lets you play as **Player 1**.
+
+3. **On other devices in the same Wi-Fi / LAN**
+
+   * Tell your friends to open the **Network URL** shown in step 1.
+   * Example: if your server printed `http://192.168.1.25:8080`, they must type that into their browser’s address bar.
+   * Each device will connect as a separate player with its own color and name.
+
+---
+
+⚡ So basically:
+
+* Run the server once.
+* Everyone opens the given link (local IP address or tunnel URL).
+* Each browser window = one player.
+
+PS: Please your laptops
+
+---
+
