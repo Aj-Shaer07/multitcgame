@@ -9,30 +9,30 @@ Players compete in real-time to **capture the most territory** before the round 
 
 ---
 
-## ✨ Features
+## Features
 
-* 🌌 Infinite world that expands as players explore
-* 🎥 Smooth camera follow for each player
-* ⏱️ Round timer with automatic reset
-* 🏆 Live leaderboard with scores
-* 🌑 Dark themed UI with unique player colors
-* ⚡ Lightweight async server using `aiohttp` + `websockets`
+* Infinite world that expands as players explore
+* Smooth camera follow for each player
+* Round timer with automatic reset
+* Live leaderboard with scores
+* Dark themed UI with unique player colors
+* Lightweight async server using `aiohttp` + `websockets`
 
 ---
 
 ## 📂 Project Structure
 
 
-server.py               # 🖥️ Game server (aiohttp + WebSocket)
-templates/index.html    # 🌐 Main HTML entrypoint
-static/game.js          # 🎮 Client logic (Canvas, WS, camera follow)
-static/style.css        # 🎨 Dark themed styling
-README.md               # 📖 This file
+server.py               # Game server (aiohttp + WebSocket)
+templates/index.html    # Main HTML entrypoint
+static/game.js          # Client logic (Canvas, WS, camera follow)
+static/style.css        # Dark themed styling
+README.md               # This file
 
 
 ---
 
-## 🚀 Setup and Run
+## Setup and Run
 
 Clone and start the server:
 
@@ -74,17 +74,12 @@ VISIBLE_RADIUS = 40    # 👁️ visible area around player
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-* 🐍 Python 3
-* 🌐 aiohttp + websockets
-* 🖼️ HTML5 + Canvas API
-* 🎨 CSS (dark theme) + JavaScript
-
----
-Good question 🙂
-
-Here’s how **multiple people can join your game**:
+* Python 3
+* aiohttp + websockets
+* HTML5 + Canvas API
+* CSS (dark theme) + JavaScript
 
 ---
 
